@@ -18,7 +18,7 @@ CREATE TABLE objet(
     id_objet INT PRIMARY KEY AUTO_INCREMENT,
     nom_objet VARCHAR(100),
     id_categorie INT,
-    id_membre VARCHAR(100),
+    id_membre INT,
     FOREIGN KEY (id_categorie) REFERENCES categore_objet(id_categorie),
     FOREIGN KEY (id_membre) REFERENCES membre(id_membre)
 );
@@ -35,7 +35,7 @@ CREATE TABLE emprunt(
     id_objet INT,
     id_membre INT,
     date_emprunt DATE,
-    date_retourt DATE,
+    date_retour DATE,
     FOREIGN KEY (id_objet) REFERENCES objet(id_objet),
     FOREIGN KEY (id_membre) REFERENCES membre(id_membre)
 );
@@ -45,7 +45,7 @@ INSERT INTO membre (nom, date_de_naissance, genre, email, ville, mdp) VALUES ('D
 INSERT INTO membre (nom, date_de_naissance, genre, email, ville, mdp) VALUES ('Durand', '1975-02-12', 'M', 'durand@gmail.com', 'Sasuke', '1234durand');
 INSERT INTO membre (nom, date_de_naissance, genre, email, ville, mdp) VALUES ('Morel', '1988-11-19', 'F', 'morel@gmail.com', 'Naruto','1234morel');
 
-INSERT INTO categorie_objet (nom_categorie) VALUES ('Estethique'),('Bricolage'),('Mecanique'),('Cuuisine');
+INSERT INTO categore_objet (nom_categorie) VALUES ('Estethique'),('Bricolage'),('Mecanique'),('Cuuisine');
 
 INSERT INTO objet (nom_objet, id_categorie, id_membre) VALUES ('Sérum hydratant', 1, 1);
 INSERT INTO objet (nom_objet, id_categorie, id_membre) VALUES ('Perceuse électrique', 2, 1);
