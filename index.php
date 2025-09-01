@@ -17,7 +17,7 @@
             <input type="submit" class="col-md-7 p-1 rounded mt-4 mb-4" value="Se connecter">
         </form>
         <hr>
-        <a href="pages/inscription.php">S'inscrire</a>
+        <a href="pages/inscription.php">S'inscrire</a>liyg
     </div>
 </body>
 </html>
