@@ -18,7 +18,7 @@
             <input type="texte" class="col-md-10 p-1 rounded mt-3 mb-3" name="email" placeholder="   email">
             <input type="texte" class="col-md-10 p-1 rounded mt-3 mb-3" name="ville" placeholder="   ville d'otigine">
             <input type="password" class="col-md-10 p-1 rounded mt-3 mb-3" name="mdp" placeholder="   mot de passe">
-            <input type="submit" class="col-md-7 p-1 rounded mt-3 mb-4" value="S'inscrire">
+            <input type="submit" class="col-md-7 p-1 rounded mt-3 mb-4  btn btn-success" value="S'inscrire">
         </form>
     </div>
 </body>

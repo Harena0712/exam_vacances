@@ -1,10 +1,38 @@
+body{
+    background-color: #E8EAF6; 
+}
 /* a {
     text-decoration: none;
 } */
+ /* header */
+.nav_case{
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 16px;
+}
+.nav_case_profil{
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 16px;
+}
+.nav_case:hover{
+    background-color: #7986CB;
+    color: white;
+    border: 1px solid #4a58a1;
+}
 /* index */
 .log {
     margin: auto;
 }
 .er {
     margin-left: 8%;
+}
+/* accueil */
+.titre_accueil{
+    position: absolute;
+    margin-left: 20%;
+    background-color: #7986CB;
+    border: 3px solid #4a58a1;
+}
+.contait_table_accueil{
+    margin-top: 6%;
+    background-color: white;
 }

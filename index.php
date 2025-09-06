@@ -17,7 +17,7 @@
             <?php if (isset($_GET['er'])) { ?> 
                 <div class="p-3 bg-danger col-md-10 er text-white rounded">Email ou mot de passe incorrect</div>
             <?php } ?>
-            <input type="submit" class="col-md-7 p-1 rounded mt-4 mb-4" value="Se connecter">
+            <input type="submit" class="col-md-7 p-2 rounded mt-4 mb-4 btn btn-success" value="Se connecter">
         </form>
         <hr>
         <a href="pages/inscription.php">S'inscrire</a>

@@ -11,7 +11,7 @@
 
     if (isset($result)) 
     {
-        $_SESSION['nom_connect'] = $nom;
+        $_SESSION['nom_connect'] = $result['nom'];
         header('Location: accueil.php');
     }
     else
