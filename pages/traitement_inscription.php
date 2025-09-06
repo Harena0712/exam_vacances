@@ -14,7 +14,7 @@
     }
     else 
     {
-        $pdp = 'NULL';
+        $pdp = 'person-circle.svg';
     }
 
     $sql = "INSERT INTO membre (nom, date_de_naissance, genre, email, ville, mdp, image_profil) 

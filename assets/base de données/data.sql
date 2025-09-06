@@ -45,6 +45,8 @@ INSERT INTO membre (nom, date_de_naissance, genre, email, ville, mdp) VALUES ('D
 INSERT INTO membre (nom, date_de_naissance, genre, email, ville, mdp) VALUES ('Durand', '1975-02-12', 'M', 'durand@gmail.com', 'Sasuke', '1234durand');
 INSERT INTO membre (nom, date_de_naissance, genre, email, ville, mdp) VALUES ('Morel', '1988-11-19', 'F', 'morel@gmail.com', 'Naruto','1234morel');
 
+UPDATE membre SET image_profil = "person-circle.svg" WHERE id_membre = 1;
+
 INSERT INTO categore_objet (nom_categorie) VALUES ('Estethique'),('Bricolage'),('Mecanique'),('Cuuisine');
 
 INSERT INTO objet (nom_objet, id_categorie, id_membre) VALUES ('Sérum hydratant', 1, 1);

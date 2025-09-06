@@ -42,4 +42,13 @@
             return 'Non emprunté';
         }
     }
+
+    function pdp($nom)
+    {
+        $sql ="SELECT * FROM membre WHERE nom = '%s'";
+        $sql = sprintf($sql,$nom);
+        $requet = mysqli_query(dbconnect(),$sql);
+        $result = mysqli_fetch_assoc($requet);
+        return $result['image_profil'];
+    }
 ?>

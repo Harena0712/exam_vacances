@@ -1,3 +1,6 @@
+<?php  
+    $pdp = pdp($_SESSION['nom_connect']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +22,7 @@
                     <ul class="navbar-nav ms-auto me-5">
                         <li class="nav-item">
                             <p class="nav-link me-4 nav_case_profil text-center">
-                                <img src="../assets/bootstrap-icons/icons/person-circle.svg" class="me-2 ms-2" width="35%" height="35%">
+                                <img src="../assets/bootstrap-icons/icons/<?php echo $pdp ?>" class="me-2 ms-2" width="35%" height="35%">
                                 <?php echo $_SESSION['nom_connect']?>
                             </p>
                         </li>
